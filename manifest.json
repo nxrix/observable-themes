@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Observable Themes",
+  "version": "0.1.2",
+  "description": "Themes for Observable.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://observablehq.com/*",
+    "https://new.observablehq.com/*",
+    "https://*.static.observableusercontent.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://observablehq.com/*",
+        "https://new.observablehq.com/*",
+        "https://*.static.observableusercontent.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "shared.css",
+        "editor-old.css",
+        "editor-new.css",
+        "notebook-old.css",
+        "notebook-new.css"
+      ],
+      "matches": [
+        "https://observablehq.com/*",
+        "https://new.observablehq.com/*",
+        "https://*.static.observableusercontent.com/*"
+      ]
+    }
+  ]
+}
