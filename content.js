@@ -25,6 +25,8 @@
     { value: "dark", title: "Dark" }
   ];
 
+  if (!isNew) return;
+
   const storageGet = () => new Promise((resolve) => {
     const area = globalThis.chrome && chrome.storage && chrome.storage.local;
     if (!area) {
