@@ -1,4 +1,4 @@
 # Observable Themes
 Chrome extension that adds a theme switcher to Observable.
 
-Full of bugs and currently only works with the new version of Observable.
+To use, download the repo, extract it, then open `chrome://extensions/` and drop the src folder or use the `Load unpacked` button.
