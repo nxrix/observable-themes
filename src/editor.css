@@ -32,8 +32,11 @@
   background-color: var(--color-blue-800);
 }
 
-/*
+:root[data-theme="dark"] .ͼ2.cm-focused .cm-selectionLayer .cm-selectionBackground {
+  background: #3b3a4a;
+}
 
+/*
 .bg-gray-50 {
   background-color: var(--theme-background-alt);
 }
