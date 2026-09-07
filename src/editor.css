@@ -12,14 +12,24 @@
   --color-gray-900: lab(98.2596% -.247031 -.706708);
   --color-zinc-900: var(--theme-foreground);
   --color-blue-50: var(--theme-background);
-}
-
-*, input, textarea, [contenteditable] {
-  caret-color: var(--theme-foreground) !important;
+  --color-black: #fff;
+  --color-white: #000;
 }
 
 .bg-white {
   background-color: var(--theme-background);
+}
+
+.bg-\[url\(data\:image\/svg\+xml\;base64\,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IndoaXRlIj48L3JlY3Q\+CiAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUgNCw0KSIgc3Ryb2tlPSJsYWIoOTYuMTU5NiUgLS4wODIzNDM4IC0xLjEzNTc1KSI\+CiAgICA8bGluZSB4MT0iNTAlIiB4Mj0iNTAlIiB5MT0iLTEwMCUiIHkyPSIyMDAlIj48L2xpbmU\+CiAgICA8bGluZSB5MT0iNTAlIiB5Mj0iNTAlIiB4MT0iLTEwMCUiIHgyPSIyMDAlIj48L2xpbmU\+CiAgPC9nPgo8L3N2Zz4\=\)\] {
+  background: var(--theme-background);
+}
+
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {
+  border-left: 1.2px solid var(--color-black);
+}
+
+:root[data-theme="dark"] .ͼ5.cm-focused .cm-activeLineGutter {
+  background-color: var(--color-blue-800);
 }
 
 /*
